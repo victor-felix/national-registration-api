@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "outDir": "dist",
+    "allowJs": true,
+    "strict": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "rootDirs": ["src"],
+    "baseUrl": ".",
+    "paths": {
+      "@adapters/*": ["./src/adapters/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@external/*": ["./src/external/*"],
+      "@main/*": ["./src/main/*"],
+      "@usecases/*": ["./src/usecases/*"]
+    }
+  },
+  "compileOnSave": false,
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  database:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_DB=national_registrations_db
+      - POSTGRES_PASSWORD=kfSZgfyTbi0G
+      - POSTGRES_USER=usr_national_registrations_api
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data:rw
+volumes:
+  db_data:
